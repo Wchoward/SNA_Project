@@ -184,5 +184,5 @@ if __name__ == "__main__":
                              names=['city', 'region', 'date', 'infection'])
     submission['infection'] = infection
     submission['region'] = region
-    submission.to_csv('data/test_submission.csv_single_LSTM',
+    submission.to_csv('data/test_submission_double_LSTM.csv',
                       header=None, index=False)
