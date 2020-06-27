@@ -146,7 +146,7 @@ if __name__ == "__main__":
     X_test = np.reshape(X_test, (X_test.shape[0], n_step, n_features))
 
     model = Sequential()
-    model.add(LSTM(units=128, input_shape=(X_test.shape[1], X_test.shape[2])))
+    model.add(LSTM(units=30, input_shape=(X_test.shape[1], X_test.shape[2])))
     # model.add(LSTM(units=52))
     model.add(Dense(n_features))
     # model.add(Dense(1))
